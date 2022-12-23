@@ -1,0 +1,94 @@
+body{
+    padding: 0;
+    background-color: rgb(205, 255, 247);
+}
+.oblasti-div{
+    width: 90%;
+    height: auto;
+    margin: 5%;
+    margin-top: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: auto;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+
+.kartica {
+    background-color: transparent;
+    width: 300px;
+    height: 350px;
+    perspective: 1000px;
+    margin:5%;
+    margin-bottom: 0;
+  }
+  .kartica2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .kartica:hover .kartica2 {
+    transform: rotateY(180deg);
+  }
+  
+  .napred, .nazad {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .napred {
+    background-color:purple;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius:40px ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .nazad {
+    background-color:purple;
+    transform: rotateY(180deg);
+    border-bottom-left-radius: 40px;
+    border-top-right-radius:40px ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* ---------------------skrol----------------------------------- */
+
+  body::-webkit-scrollbar {
+    width: 13px;         
+    background-color: transparent;    
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(217, 189, 255); 
+    background-color: transparent;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: purple; 
+    border-radius: 20px; 
+    border: 5px solid transparent; 
+    border-right: 6px solid transparent; 
+  } 
