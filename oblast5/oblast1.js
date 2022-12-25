@@ -143,7 +143,7 @@ function popuni(rb)
     }
     else
     {
-      document.getElementById("kontemariomarkodeltintoretokavalieredesantobenetodellaaltaadige").innerHTML=`<img ssrc="${pitanja[rb].hint}">`;
+      document.getElementById("kontemariomarkodeltintoretokavalieredesantobenetodellaaltaadige").innerHTML=`<img src="${pitanja[rb].hint}">`;
     }
 }
 

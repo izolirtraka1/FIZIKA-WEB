@@ -143,7 +143,7 @@ function popuni(rb)
     }
     else
     {
-      document.getElementById("kontemariomarkodeltintoretokavalieredesantobenetodellaaltaadige").innerHTML=`<img ssrc="${pitanja[rb].hint}">`;
+      document.getElementById("kontemariomarkodeltintoretokavalieredesantobenetodellaaltaadige").innerHTML=`<img src="${pitanja[rb].hint}">`;
     }
 }
 
@@ -160,6 +160,10 @@ function ucitaj()
   pitanja[6] = new pitanje("Elektroni se u atomu krecu oko jezgra samo po stacioniranim stanjima. Dok se krece po stacioniranim orbitama elektron ne emituje elektromagnetno zracenje. - je definicija kog Borovog postulata:","Prvog",0,"Drugog",0,"Treceg",0,0,"POKUSAJ PONOVO",0);
   pitanja[7] = new pitanje("Formula ln = n * ћ je vezano za:","postulat o kvantnim prelazima",0,"postulat o stacioniranim stanjima",0,"postulat o momentu impulsa",0,2,"ln - moment impulsa elektrona",0);
   pitanja[8] = new pitanje("Kada elektron u atomu prelazi sa jedne na drugu stacioniranu orbitu aH emituje ili apsorbuje kvant energije jednak __________.","razlici energije ta dva nivoa",0,"zbiru energija ta dva broja",0,"proizvodu energija ta dva broja",0,0,"8-hint.PNG",1);
+  pitanja[9] = new pitanje("Konstanta ћ se odnosi na:","plankovu konstantu",0,"redukovanu plankovu konstantu",0,"njutnovu gravitacionu konstantu",0,1,"9-hint.PNG",1);
+  pitanja[10] = new pitanje("Konstanta V1 ima vrednost: ", "2*10^6 m/J",0,"3*10^6 m/J",0,"2*10^6 W/m^2",0,0,"V1[m/J]",0);
+  pitanja[11] = new pitanje("Ukoliko sredite izraz e^2/4πћε0 dobicete konstantu:","r1",0,"V1",0,"n1",0,1,"11-hint.PNG",1);
+  
   popuni(0);
     
 }
