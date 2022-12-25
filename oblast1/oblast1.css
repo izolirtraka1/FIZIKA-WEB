@@ -71,7 +71,7 @@ body{
 /* ----------------------pomoc------------------------------- */
 
 .pomoc{
-  display: flex;
+  display: none;
   top: 30px;
   left: 0;
   justify-content: center;
