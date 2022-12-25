@@ -23,14 +23,13 @@ body{
     border-bottom-right-radius:60px ;
 
     width: 80%;
-    height: 500px;
 
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
 
-    padding-top: 20px;
-
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
 
     display: block;
