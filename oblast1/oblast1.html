@@ -8,24 +8,25 @@
     <link rel="stylesheet" href="oblast1.css">
     <script src="oblast1.js"></script>
 </head>
-<body>
+<body onload="move();ucitaj()">
     <div class="dodaci">
         <div class="nazad2-div">
-            <a href="../kviz.html"  lass="dugme1" class="nazad">NAPUSTI KVIZ </a>
+            <button class="nazad" onclick="oceDaBega()">NAPUSTI KVIZ </a>
         </div>
-        <div class="tajmer">
-                    
-        </div>
+        
     </div>
     <div class="objave">
         <div class="reg-box"> 
+            <div class="timeBar" >
+                <div class="timeBarHighlight" id="tBar">bbbb</div>
+            </div>
             <div class="gornja-polovina">
-                 <div id="questionDiv" class="pitanje">Dobili ste vrlo gadne poruke preko Instagrama, korisnik naloga je nepoznat, i uspešno krije identitet.</div>
+                 <div  class="pitanje" id = "kumZorzo">Dobili ste vrlo gadne poruke preko Instagrama, korisnik naloga je nepoznat, i uspešno krije identitet.</div>
             </div>    
-            <div class="donja-polovina">  
-                <div class="odgovori" id="option1Div" onclick="optionChoose(this.Text,1);">A - Pročitajte ostatak poruka</div>
-                <div class="odgovori" id="option2Div" onclick="optionChoose(this.Text,1);">B - Odmah odgovorite, ignorišite ostale poruke</div>
-                <div class="odgovori" id="option3Div" onclick="optionChoose(this.Text,1);">C - Ignorišite ostatak poruka odmah</div> 
+            <div class="donja-polovina" id = "cirko">  
+                <div class="odgovori" id="option1Div" onclick="optionChoose(0,1);">A - Pročitajte ostatak poruka</div>
+                <div class="odgovori" id="option2Div" onclick="optionChoose(1,1);">B - Odmah odgovorite, ignorišite ostale poruke</div>
+                <div class="odgovori" id="option3Div" onclick="optionChoose(2,1);">C - Ignorišite ostatak poruka odmah</div> 
             </div>
         </div> 
     </div>
@@ -33,21 +34,17 @@
 </div>
 <div class="pomoc" id="pomoc">
     <div class="pomoc2">
-    <div class="nazad-div">
-        <a href="kviz.html"  lass="dugme1" class="nazad">NAZAD</a>
-    </div>
-
-    <div class="text">
-        <div class="text1">
-        <p> OVO JE TEKST KOJI CE SLUZITI KAO POMOC</p>
+        <div class="nazad-div">
+            <button id = "ozrenSoldatovic"class="nazad" onclick="sakrijPomoc()">NAZAD</a>
         </div>
-    </div>
-    <div class="zapocni">
-        <div class="zapocni1">
-        <divc class="zapocni-div">
-            
-        </divc>
-    </div>
 
+        <div class="text">
+            <div class="text1">
+            <p id = "kontemariomarkodeltintoretokavalieredesantobenetodellaaltaadige"> OVO JE TEKST KOJI CE SLUZITI KAO POMOC</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
 </body>
 </html>
