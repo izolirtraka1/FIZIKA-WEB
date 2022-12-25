@@ -71,7 +71,7 @@ function sakrijPomoc()
   }
 }
 
-var timeMax = 120;
+var timeMax = 100000;
 var timeFunc;
 
 function move() {
