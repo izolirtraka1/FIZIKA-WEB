@@ -71,7 +71,7 @@ function sakrijPomoc()
   }
 }
 
-var timeMax = 10;
+var timeMax = 120;
 var timeFunc;
 
 function move() {
@@ -149,9 +149,17 @@ function popuni(rb)
 
 function ucitaj()
 {
-  pitanja[0]=new pitanje("Dobili ste vrlo gadne poruke preko Instagrama, korisnik naloga je nepoznat, i uspešno krije identitet.","A - Pročitajte ostatak poruka",0,"B - Odmah odgovorite, ignorišite ostale poruke",0,"C - Ignorišite ostatak poruka odmah",0,0, "test",0)
-  pitanja[1]=new pitanje("test","test",0,"test",0,"test",0,1, "test",0);
-
+  pitanja[0] = new pitanje("Formula za izracunavanje poluprecnika stacioniranih stanja glasi:","0-0.png",1,"0-1.png",1,"0-2.png",1,2,"0-hint.png",1);
+  pitanja[1] = new pitanje("Borov radijus predstavlja:","poluprecnik najvise stacionirane orbite elektrona u vodonikovom atomu",0,"poluprecnik najnize stacionirane orbite elektrona u vodonikovom atomu",0,"poluprecnik najnize promenljive orbite u vodonikovom atomu",0,1,"PROBAJTE PONOVO",0);
+  
+  pitanja[2] = new pitanje("Oznake me, Fcp i Fe predstavljaju:","masa elektrona, elektricna sila, elektricna energija",0,"molekulska energija, centripetalna sila, elektricna sila",0,"masa elektrona, centripetalna sila, elektricna sila",0,2,"me - masa elektrona",0);
+  pitanja[3] = new pitanje("Posenova serija predstavlja silazenje elektrona sa kog nivoa na prvi?","Drugog",0,"Prvog",0,"Treceg",0,2,"Nije a prvog.",0);
+  pitanja[4] = new pitanje("Ridbezgova konstanta (R) iznosi:","4-0.png",1,"4-1.png",1,"4-2.png",1,2,"4-hint.png",1);
+  pitanja[5] = new pitanje("Z predstavlja:","glavni kvantni broj energeskog nivoa",0,"redni broj atoma",0,"naziv serije",0,1,"Z predstavlja broj protona koji se nalaze u jezgru svakog atoma tog elementa",0);
+  
+  pitanja[6] = new pitanje("Elektroni se u atomu krecu oko jezgra samo po stacioniranim stanjima. Dok se krece po stacioniranim orbitama elektron ne emituje elektromagnetno zracenje. - je definicija kog Borovog postulata:","Prvog",0,"Drugog",0,"Treceg",0,0,"POKUSAJ PONOVO",0);
+  pitanja[7] = new pitanje("Formula ln = n * ћ je vezano za:","postulat o kvantnim prelazima",0,"postulat o stacioniranim stanjima",0,"postulat o momentu impulsa",0,2,"ln - moment impulsa elektrona",0);
+  pitanja[8] = new pitanje("Kada elektron u atomu prelazi sa jedne na drugu stacioniranu orbitu aH emituje ili apsorbuje kvant energije jednak __________.","razlici energije ta dva nivoa",0,"zbiru energija ta dva broja",0,"proizvodu energija ta dva broja",0,0,"8-hint.PNG",1);
   popuni(0);
     
 }
