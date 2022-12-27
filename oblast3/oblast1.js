@@ -26,18 +26,10 @@ function optionChoose(text,rb)
     bodovi+=(2-BRpokusaja);
     BRpokusaja=0;
     rb++;
-    if(rb===pitanja.length)
-    {
-      clearInterval(timeFunc);
-      document.getElementById("kontemariomarkodeltintoretokavalieredesantobenetodellaaltaadige").innerHTML=`
-      KRAJ KVIZA<br>
-      BROJ POENA : ${bodovi}
-      `;
-      t=true;
-      document.getElementById("pomoc").style.display="flex";
-      return 0;
-    }
-    popuni(rb);
+    
+    document.getElementById("milasin").innerHTML=`<button id = "ozrenSoldatovic"class="nazad" onclick="terajDalje(${rb})">NASTAVI</a>`;
+    document.getElementById("jakoje").innerHTML=`Tacno`;
+    document.getElementById("dzama").style.display="flex";
   }
   else if(BRpokusaja==0)
   {
@@ -47,18 +39,10 @@ function optionChoose(text,rb)
   {
     BRpokusaja=0;
     rb++;
-    if(rb===pitanja.length)
-    {
-      clearInterval(timeFunc);
-      document.getElementById("kontemariomarkodeltintoretokavalieredesantobenetodellaaltaadige").innerHTML=`
-      KRAJ KVIZA<br>
-      BROJ POENA : ${bodovi}
-      `;
-      t=true;
-      document.getElementById("pomoc").style.display="flex";
-      return 0;
-    }
-    popuni(rb);
+    
+    document.getElementById("milasin").innerHTML=`<button id = "ozrenSoldatovic"class="nazad" onclick="terajDalje(${rb})">NASTAVI</a>`;
+    document.getElementById("jakoje").innerHTML=`Netacno`;
+    document.getElementById("dzama").style.display="flex";
   }
 }
 
@@ -71,7 +55,7 @@ function sakrijPomoc()
   }
 }
 
-var timeMax = 100000;
+var timeMax = 1000;
 var timeFunc;
 
 function move() {
@@ -90,6 +74,7 @@ function move() {
             BROJ POENA : ${bodovi}
             `;
             t=true;
+            
             document.getElementById("pomoc").style.display="flex";
             return 0;
         }else{
@@ -111,29 +96,30 @@ function move() {
 function oceDaBega()
 {
   clearInterval(timeFunc);
-  document.getElementById("kontemariomarkodeltintoretokavalieredesantobenetodellaaltaadige").innerHTML=`
+  document.getElementById("dragojlo").innerHTML=`
   KRAJ KVIZA<br>
   BROJ POENA : ${bodovi}
   `;
   t=true;
-  document.getElementById("pomoc").style.display="flex";
+  document.getElementById("radasin").style.display="flex";
   return 0;
 }
 
 function popuni(rb)
 {
-  document.getElementById("kumZorzo").innerHTML = pitanja[rb].textPitanja;
+  document.getElementById("kumZorzo").innerHTML = ((rb+1) + ". " + pitanja[rb].textPitanja);
     
     let div="";
+    let p =['A','B','C']
     for(let i =0; i<3;i++)
     {
       if(pitanja[rb].tip[i]===0)
       {
-        div+=`<div class="odgovori" id="option1Div" onclick="optionChoose(${i},${rb+1});">${pitanja[rb].odgovor[i]}</div>`
+        div+=`<div class="odgovori1"> <div class="odg" ><h2>${p[i]})</h2></div><div class="odgovori" id="option1Div" onclick="optionChoose(${i},${rb+1});">${pitanja[rb].odgovor[i]}</div></div>`
       }
       else
       {
-        div+=`<div class="odgovori" id="option1Div" onclick="optionChoose(${i},${rb+1});"><img src="${pitanja[rb].odgovor[i]}"></div>`
+        div+=`<div class="odgovori1"> <div class="odg" ><h2>${p[i]})</h2></div><div class="odgovori" id="option1Div" onclick="optionChoose(${i},${rb+1});"><img src="${pitanja[rb].odgovor[i]}"></div></div>`
       }
     }
     document.getElementById("cirko").innerHTML = div;
@@ -145,6 +131,24 @@ function popuni(rb)
     {
       document.getElementById("kontemariomarkodeltintoretokavalieredesantobenetodellaaltaadige").innerHTML=`<img src="${pitanja[rb].hint}">`;
     }
+}
+
+function terajDalje(rb)
+{
+  
+    document.getElementById("dzama").style.display="none";
+    if(rb===pitanja.length)
+    {
+      clearInterval(timeFunc);
+      document.getElementById("dragojlo").innerHTML=`
+      KRAJ KVIZA<br>
+      BROJ POENA : ${bodovi}
+      `;
+      t=true;
+      document.getElementById("radasin").style.display="flex";
+      return 0;
+    }
+    popuni(rb);
 }
 
 function ucitaj()
