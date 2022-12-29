@@ -153,20 +153,20 @@ function terajDalje(rb)
 
 function ucitaj()
 {
-  pitanja[0] = new pitanje("Formula za izracunavanje poluprecnika stacioniranih stanja glasi:","0-0.png",1,"0-1.png",1,"0-2.png",1,2,"0-hint.png",1);
-  pitanja[1] = new pitanje("Borov radijus predstavlja:","poluprecnik najvise stacionirane orbite elektrona u vodonikovom atomu",0,"poluprecnik najnize stacionirane orbite elektrona u vodonikovom atomu",0,"poluprecnik najnize promenljive orbite u vodonikovom atomu",0,1,"PROBAJTE PONOVO",0);
+  pitanja[0] = new pitanje("Formula za izračunavanje poluprečnika stacionarnih orbita glasi:","0-0.png",1,"0-1.png",1,"0-2.png",1,2,"0-hint.png",1);
+  pitanja[1] = new pitanje("Borov radijus predstavlja:","poluprečnik najviše stacionarne orbite elektrona u vodonikovom atomu",0,"poluprečnik najniže stacionarne orbite elektrona u vodonikovom atomu",0,"poluprečnik najviše nestacionarne orbite elektrona u vodonikovom atomu",0,1,"POKUŠAJ PONOVO",0);
   
-  pitanja[2] = new pitanje("Oznake me, Fcp i Fe predstavljaju:","masa elektrona, elektricna sila, elektricna energija",0,"molekulska energija, centripetalna sila, elektricna sila",0,"masa elektrona, centripetalna sila, elektricna sila",0,2,"me - masa elektrona",0);
-  pitanja[3] = new pitanje("Pašenova serija predstavlja silaženje elektrona sa kog nivoa na prvi?","Drugog",0,"Prvog",0,"Treceg",0,2,"Nije a prvog.",0);
+  pitanja[2] = new pitanje("Oznake me, Fcp i Fe predstavljaju:","Masu elektrona, električnu silu, električnu energiju",0,"Masu elektrona, električnu silu, električnu energiju",0,"Masa elektrona, centripetalnu silu, električnu silu",0,2,"me - masa elektrona",0);
+  pitanja[3] = new pitanje("Pašenova serija predstavlja silaženje elektrona sa kog nivoa na prvi?","Drugog",0,"Prvog",0,"Trećeg",0,2,"Nije sa prvog.",0);
   pitanja[4] = new pitanje("Ridbergova konstanta (R) iznosi:","4-0.png",1,"4-1.png",1,"4-2.png",1,2,"4-hint.png",1);
   pitanja[5] = new pitanje("Z predstavlja:","glavni kvantni broj energeskog nivoa",0,"redni broj atoma",0,"naziv serije",0,1,"Z predstavlja broj protona koji se nalaze u jezgru svakog atoma tog elementa",0);
   
-  pitanja[6] = new pitanje(`“ Elektroni se u  atomu  kreću oko jezgra samo po stacionarnim stanjima. Dok se kreće po orbitama elektron ne emituje elektromagnetno zračenje” – je definicija kog Borovog postulata:`,"Prvog",0,"Drugog",0,"Treceg",0,0,"POKUSAJ PONOVO",0);
+  pitanja[6] = new pitanje(`“ Elektroni se u  atomu  kreću oko jezgra samo po stacionarnim orbitama. Dok se kreće po orbitama elektron ne emituje elektromagnetno zračenje” – je definicija kog Borovog postulata:`,"Prvog",0,"Drugog",0,"Treceg",0,0,"POKUŠAJ PONOVO",0);
   pitanja[7] = new pitanje("Formula ln = n * ћ se odnosi na:","postulat o kvantnim prelazima",0,"postulat o stacioniranim stanjima",0,"postulat o momentu impulsa",0,2,"ln - moment impulsa elektrona",0);
   pitanja[8] = new pitanje(`“ Kada elektron u omotaču  prelazi sa jedne na drugu stacionarnu orbitu on emituje ili apsorbuje kvant energije jednake _______ ”.`,"razlici energije ta dva nivoa",0,"zbiru energija ta dva broja",0,"proizvodu energija ta dva broja",0,0,"8-hint.PNG",1);
   pitanja[9] = new pitanje("Konstanta ћ je:","plankovu konstantu",0,"redukovanu plankovu konstantu",0,"njutnovu gravitacionu konstantu",0,1,"9-hint.PNG",1);
   pitanja[10] = new pitanje("Konstanta V1 ima vrednost: ", "2*10^6 m/s",0,"2*10^-6 m/s",0,"2*10^6 W/m",0,0,"V1[m/]",0);
-  pitanja[11] = new pitanje("Iz formule  Vn = Z/n * e^2 /4*πћƐ , izraz e^2 /4*πћƐ mozemo zameniti konstantom:","r1",0,"V1",0,"n1",0,1,"11-hint.PNG",1);
+  pitanja[11] = new pitanje("Iz formule  Vn = Z/n * e^2 /4*πћƐ , izraz e^2 /4*πћƐ mozemo zameniti konstantom:","r1",0,"V1",0,"n1",0,1,"POKUŠAJ PONOVO",0);
   
   popuni(0);
     
