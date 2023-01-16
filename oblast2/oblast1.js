@@ -55,7 +55,7 @@ function sakrijPomoc()
   }
 }
 
-var timeMax =1000;
+var timeMax =500;
 var timeFunc;
 
 function move() {
